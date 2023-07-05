@@ -8,9 +8,14 @@
 #     Your total net annual salary is: 54000.00
 # The formula is net salary = Gross salary - deductions
 
+# Ingress user variables
 read -p "Please enter your monthly gross salary: " SALARY
 read -p "Please enter your tax rate (in percentage): " TAX
+
 # Use bc to operate decimals
 MONTHLY_TAX=$(echo "scale=2; $SALARY * ($TAX/100)" | bc -l)
 NET_SALARY=$(echo "$SALARY*12-$MONTHLY_TAX*12" | bc -l)
 echo "Your total net salary is: $NET_SALARY"
+
+# IF I only use simple operators like the example bellow, I can't operate with decimal numbers.
+#MONTHLY_TAX=$(($SALARY * $TAX/100))
