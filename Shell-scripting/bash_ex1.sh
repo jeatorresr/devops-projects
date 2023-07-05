@@ -1,5 +1,5 @@
 #! /bin/bash
-
+# Exercise 1
 # Create a bash script that prints out the number of CPU cores you have in your system.
 
 echo "CPU cores"
