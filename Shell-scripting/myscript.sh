@@ -1,5 +1,6 @@
 # #! /bin/bash
 
+# CHEAT SHEET
 # # echo command
 echo Hello World!
 
