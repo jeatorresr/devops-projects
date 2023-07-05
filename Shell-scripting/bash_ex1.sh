@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# Create a bash script named cores.sh that prints out the number of CPU cores you have in your system.
+# Create a bash script that prints out the number of CPU cores you have in your system.
 
 echo "CPU cores"
 
