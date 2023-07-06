@@ -10,4 +10,4 @@
 
 read -p "Please write a word with * on it: " WORD
 WORD=${WORD//\*}
-echo "Updated word: " $WORD
+echo "Updated word: " $WORD | tr '[a-z]' '[A-Z]'
